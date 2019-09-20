@@ -146,11 +146,7 @@ REST_FRAMEWORK = {
     ),
 }
 
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',
-    'http://localhost:8000',
-    'http://localhost:8080',
-]
+CORS_ORIGIN_ALLOW_ALL = True
 
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
