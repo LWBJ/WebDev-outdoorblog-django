@@ -1,0 +1,1 @@
+web: gunicorn outdoorBlog.wsgi --log-file -
